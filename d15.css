@@ -1,0 +1,235 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./honeycomb.jpeg);
+    background-size: cover;
+    font-family: "space monb",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 700;
+    height: 100vh;
+}
+.tipcal{
+    opacity: 0.6;
+    
+}
+header{
+    display: flex;
+    justify-content: center;
+    margin-block: 50px;
+}
+.container{
+border-radius: 20px;
+background-color:#FFFFF0;
+padding: 10px;
+
+}
+
+.topsection{
+    padding: 15px;
+}
+.label{
+    font-size: 20px;
+    color: black;
+    font-weight: 700;
+    margin-bottom: 20px;
+   
+}
+
+.input_wrapper {
+    position:relative;
+    margin-bottom: 20px;
+}
+.input_wrapper > input {
+margin-block: 0.40px;
+padding: 10px;
+font-size: 18px;
+width: 350px;
+border: none;
+background-color:#ffbe42;
+border-radius: 10px;
+text-align: right;
+cursor: pointer;
+color: black;
+font-family: inherit;
+font-size: 18px;
+font-weight: 700;
+}
+input[type="number"]{
+    -moz-appearance: textfield;
+}
+.input_wrapper>input:focus{
+    outline: none;
+}
+.input_wrapper>img{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+.btncontainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 15px;
+    margin-bottom: 10px !important;
+}
+.btncontainer>button{
+    padding: 10px;
+    border:none;
+    border-radius: 5px;
+    background-color:#e8763d;
+    color: whitesmoke;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: inherit;
+}
+.active{
+    background-color:#f6e000;
+    color:black;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    border:none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: inherit;
+}
+button:active{
+    transform: scale(0.98);
+}
+.btncontainer>input{
+    border:none;
+    padding: 10px;
+    background-color:#ffbe42;
+    color: black;
+    border-radius: 5px;
+     font-family: inherit;
+     font-size:14px;
+}
+.peolpewrapper{
+    position: relative;
+}
+.peolpewrapper>input{
+    margin-block: 10px;
+    padding: 10px;
+    font-size: 16px;
+    width: 350px;
+    border: none;
+    border-radius: 5px;
+    background-color:#ffbe42;
+    text-align: right;
+    cursor: pointer;
+    color: black;
+    font-size: 18px;
+    font-family: inherit;
+    font-weight: 700;
+}
+.peolpewrapper>input:focus{
+    outline: none;
+}
+.peolpewrapper>img{
+    position: absolute;
+    top:20px;
+    left:20px;
+    
+}
+.bottomsection{
+  background-color: #AB8938;
+  border: none;
+  border-radius: 20px;
+  padding-block:50px 20px;
+  padding-inline: 20px;
+}
+.desc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 55px;
+}
+.desc>p{
+    font-size: 20px;
+    font-family: inherit;
+    color: white;
+}
+.desc>p>span{
+    opacity: 0.5;
+}
+.desc>div{
+    font-size:30px;
+    font-family: inherit;
+    color: white;
+    font-weight: 700;
+}
+.reset{
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: yellowgreen;
+    font-size: 16px;
+    width:380px;
+    cursor: pointer;
+    display: block;
+}
+@media(min-width:1200px){
+   .container{
+    display: flex;
+    width: 920px;
+    height: 490px;
+    margin: auto;
+   }
+.topsection{
+    width: 50%;
+    margin-block: 50px 20px;
+}
+.bottomsection{
+    width: 50%;
+    margin-block:35px;
+    margin-right: 35px;
+    margin-block:50px 20px;
+    padding-inline:20px;
+}
+.desc{
+    padding-inline: 40px;
+}
+.reset{
+    position: absolute;
+    /* bottom: 70px;
+    left:260px; */
+    width: 360px;
+    margin:auto;
+}
+.input_wrapper>input{
+    width: 379px;
+}
+.peolpewrapper>input{
+    position: relative;
+    width: 379px;
+    bottom: 20px;
+}
+.peolpewrapper>img{
+    position: absolute;
+    top: 7px;
+}
+.btncontainer{
+    grid-template-columns: repeat(2,1.5fr);
+    margin-bottom: 2.5rem;
+}
+.btn{
+    width: 200px;
+}
+.btncontainer>input{
+    width: 100%;
+}
+}
+
+@media(min-width:375px)and (max-width:1199px){
+.reset{
+    width: 100%;
+}    
+}

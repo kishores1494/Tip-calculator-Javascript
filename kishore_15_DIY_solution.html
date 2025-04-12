@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIP CALCULATOR</title>
+    <link rel="stylesheet" href="./d15.css">
+</head>
+<body>
+    
+    <header>
+     
+    </header>
+    <main>
+        <p class='tipcal'style="text-align: center;">Tip calculator</p>
+        <div class="container">
+           
+            <div class="topsection">
+                
+                <div class="label">
+                    <label for="input">Bill</label>
+                </div>
+                <div class="input_wrapper">
+                    <input type="number" min="'0" oninput="validateinput(this)" placeholder="0.0" id="input"  value="display" onchange="CaptureValue()">
+                    <img src="./1.png" height="20px">
+                </div>
+                <div class="label">
+                    <label for="customtip">Select Tip %</label>
+                </div>
+                <div class="btncontainer ">
+                    <button class="btn" id="btns" onclick="CaptureTip(this)" value="5">5%</button>
+                    <button class="btn"  id="btns" onclick="CaptureTip(this)" value="10">10%</button>
+                    <button class="btn"  id="btns" onclick="CaptureTip(this)" value="15">15%</button>
+                    <button class="btn"  id="btns" onclick="CaptureTip(this)" value="25">25%</button>
+                    <button class="btn"  id="btns" onclick="CaptureTip(this)" value="50">50%</button>
+                    <input type="number" min="'0" oninput="validateinput(this)" placeholder="Custom" id="customtip" onchange="CaptureTip(this)">
+                </div>
+                <button class="active" onclick="Cal()">Calculate</button>
+              
+            </div>
+            <div class="bottomsection">
+                <div class="amount">
+                    <div class="desc">
+                        <p>Tip Amount </p>
+                        <div class="tipvalue" id="tip">Rupee 0</div>
+                    </div>
+                    <div class="desc">
+                        <p>Total </p>
+                        <div class="tipvalue" id="total">Rupee 0</div>
+                    </div>
+                </div>
+                <button class="reset" onclick="reset()">Reset</button>
+
+            </div>
+        </div>
+    </main>
+    <script src="./project.js"></script>
+</body>
+</html>
